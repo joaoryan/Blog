@@ -59,7 +59,6 @@ export const Container = styled.section`
   width: 89%;
   height: 100%;
   float: right;
-  background: ${color.primaryWhiteColor};
   padding: 32px 114px;
   overflow: scroll;
 `;

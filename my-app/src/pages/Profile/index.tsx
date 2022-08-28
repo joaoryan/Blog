@@ -7,11 +7,9 @@ import { Container } from '../../styles/GlobalStyles';
 import { Section } from './styled';
 
 //icons
-import { ArrowToBottom } from '@styled-icons/boxicons-regular/ArrowToBottom';
-import { BookAdd } from '@styled-icons/boxicons-regular/BookAdd';
-import { Copy } from '@styled-icons/boxicons-regular/Copy';
 
-export function Cookbook(): JSX.Element {
+
+export function Profile(): JSX.Element {
 
   return (
     <Section>

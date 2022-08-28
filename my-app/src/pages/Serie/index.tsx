@@ -6,10 +6,9 @@ import axios from '../../services/axios';
 import { Container } from '../../styles/GlobalStyles';
 import { Section } from './styled';
 //icons
-import { FileAddOutline } from '@styled-icons/evaicons-outline/FileAddOutline';
 import { number } from 'prop-types';
 
-export function Equipamentos(): JSX.Element {
+export function Serie(): JSX.Element {
 
 
   return (
