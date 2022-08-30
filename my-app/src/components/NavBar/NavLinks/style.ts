@@ -11,7 +11,7 @@ export const LinksList = styled.ul`
 
 export const ListItem = styled.li`
    &:hover {
-    color: ${props => props.theme.colors.navbarHoverItem}
+    color: #F231A5
    }
   & > a {
     border: 1px solid transparent;
@@ -25,11 +25,11 @@ export const ListItem = styled.li`
   }
 
   & > a:hover {
-    color: ${props => props.theme.colors.navbarHoverItem}
+    color: #F231A5
   }
 
   .active {
-    color: ${props => props.theme.colors.navbarHoverItem}
+    color: #F231A5
   }
 
 `;

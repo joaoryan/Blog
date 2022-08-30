@@ -71,6 +71,26 @@ export const Text = styled.div`
   text-align: center;
 `;
 
+export const DivIcon = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`;
+
+export const Icon = styled.div`
+  width: 30px;
+  cursor: pointer;
+
+  svg{
+   font-size: 35px;
+  }
+
+  &:hover {
+    color: #F231A5
+   }
+`;
+
 export const Title = styled.div`
   color: #8899a6;
   font-size: 20px;

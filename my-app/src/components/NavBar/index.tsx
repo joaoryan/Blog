@@ -1,6 +1,9 @@
+import { link } from 'fs/promises';
 import React, { useState } from 'react';
 import NavLinks from './NavLinks';
-import { Nav, LeftArrow, Image, ButtonHidden, Text, Title } from './styles';
+import { Nav, LeftArrow, Image, ButtonHidden, Text, Title, Icon, DivIcon } from './styles';
+import { AiFillGithub, AiFillLinkedin, AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
+
 
 const NavBar = () => {
   const [backOffNav, setbackOffNav] = useState(false);
@@ -11,6 +14,20 @@ const NavBar = () => {
     <Nav className={`${backOffNav ? 'back-off' : ''}`}>
       <Title>{"João Ryan"}</Title>
       <Text>{"Aqui devo escrever uma breve introdução"}</Text>
+      <DivIcon>
+        <Icon>
+            <AiFillGithub/>
+        </Icon>
+        <Icon>
+          <AiFillInstagram/>
+        </Icon>
+        <Icon>
+          <AiFillLinkedin/>
+        </Icon>
+        <Icon>
+          <AiFillTwitterCircle/>
+        </Icon>
+      </DivIcon>
       <NavLinks hidden={backOffNav} />
       <ButtonHidden onClick={slideHandler} className='button-hidden'>
         <LeftArrow className={`${backOffNav ? 'right' : 'left'}`} />
