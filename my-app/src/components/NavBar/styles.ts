@@ -79,11 +79,10 @@ export const DivIcon = styled.div`
 `;
 
 export const Icon = styled.div`
-  width: 30px;
   cursor: pointer;
 
   svg{
-   font-size: 35px;
+   font-size: 30px;
   }
 
   &:hover {
