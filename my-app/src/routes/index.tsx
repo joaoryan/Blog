@@ -6,6 +6,7 @@ import { Serie } from '../pages/Serie';
 import { Home } from '../pages/Home';
 import { Page404 } from '../pages/Page404';
 import Layout from '../pages/Layout';
+import { TestTDD } from '../pages/Cards/TestTDD';
 
 const AppRoutes = () => {
 	return (
@@ -15,7 +16,8 @@ const AppRoutes = () => {
 			<Route path='home' element={<Home />} />
 			<Route path='profile' element={<Profile />} />
 			<Route path='serie' element={<Serie />} />
-			<Route path='project' element={<Project />} />   
+			<Route path='project' element={<Project />} /> 
+			<Route path='testTDD' element={<TestTDD />} />
 			</Route>
 		</Routes>
 		</BrowserRouter>
