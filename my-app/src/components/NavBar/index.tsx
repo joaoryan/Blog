@@ -32,7 +32,7 @@ const NavBar = () => {
       <ButtonHidden onClick={slideHandler} className='button-hidden'>
         <LeftArrow className={`${backOffNav ? 'right' : 'left'}`} />
       </ButtonHidden>
-    </Nav>
+    </Nav> 
   );
 };
 
