@@ -9,8 +9,16 @@ export const Page = styled.div`
 `;
 
 export const Card = styled.img`
-  height: 300px;
-  width: 250px;
+  height: 270px;
+  width: 220px;
   background-color: #fff;
+  border-top-left-radius: 25px;
+  transition: 0.5s;
+  :hover{
+    border-top-left-radius: 0px;
+    transition: 0.5s;
+    height: 280px;
+    width: 230px;
+  }
 `;
 
