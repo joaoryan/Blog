@@ -11,15 +11,16 @@ import { NavLink } from 'react-router-dom';
 import { BiSearchAlt } from "react-icons/bi";
 import { Section } from '../Layout/styles';
 
+
 export function Home(): JSX.Element {
   const [filteredMenu, setfilteredMenu] = useState<string>('');
 
   return (
-    <Styled.Page> 
+    <Styled.Page>
       <Styled.SearchInputDiv>
         <Styled.IconSearch>
           <BiSearchAlt />
-        </Styled.IconSearch> 
+        </Styled.IconSearch>
         <Styled.Input name='busca' placeholder={'Buscar'}
           onChange={(e) => setfilteredMenu(e.target.value)} />
       </Styled.SearchInputDiv>
