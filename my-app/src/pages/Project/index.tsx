@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
-
-import { Container } from '../../styles/GlobalStyles';
-import axios from '../../services/axios';
+import React from 'react';
+import * as Styled from './styled';
 
 export function Project(): JSX.Element {
 
   return (
-    <Container>
-      rrrrrrrrrrrrrrrr
-    </Container>
+    <Styled.Page>
+    <Styled.Title>Projetos</Styled.Title>
+    <Styled.Text>
+      Pagina em construção
+    </Styled.Text>
+  </Styled.Page>
   );
 }

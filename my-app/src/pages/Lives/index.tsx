@@ -4,16 +4,19 @@ import axios from '../../services/axios';
 
 //styles
 import { Container } from '../../styles/GlobalStyles';
-import { Section } from './styled';
+import * as Styled from './styled';
 //icons
 import { number } from 'prop-types';
 
-export function Serie(): JSX.Element {
+export function Live(): JSX.Element {
 
 
   return (
-    <Section>
-
-    </Section>
+    <Styled.Page>
+    <Styled.Title>Lives</Styled.Title>
+    <Styled.Text>
+      
+    </Styled.Text>
+  </Styled.Page>
   );
 }

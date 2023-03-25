@@ -15,7 +15,7 @@ export const ListItem = styled.li`
    }
   & > a {
     border: 1px solid transparent;
-    color: #8899a6;
+   color: #8899a6;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -25,11 +25,16 @@ export const ListItem = styled.li`
   }
 
   & > a:hover {
-    color: #F231A5
+    transition: 0.5s;
+    color: white
   }
 
   .active {
-    color: #F231A5
+    color: #F27100
+  }
+
+  .active:hover {
+    color: #F27100
   }
 
 `;

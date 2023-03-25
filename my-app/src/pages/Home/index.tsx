@@ -25,7 +25,6 @@ export function Home(): JSX.Element {
           onChange={(e) => setfilteredMenu(e.target.value)} />
       </Styled.SearchInputDiv>
       <Styled.Cards>
-
         <NavLink to='/testTDD' >
           <Styled.Image
             src={tdd}

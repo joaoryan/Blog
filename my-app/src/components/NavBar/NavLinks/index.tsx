@@ -37,8 +37,8 @@ const Links: FC<LinksProps> = (props) => {
         </NavLink>
       </ListItem>
       <ListItem>
-        <NavLink to='/serie'>
-          {!props.hidden && 'Séries'}
+        <NavLink to='/lives'>
+          {!props.hidden && 'Lives'}
         </NavLink>
       </ListItem>
       <ListItem>

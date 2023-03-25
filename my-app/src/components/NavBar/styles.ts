@@ -86,7 +86,7 @@ export const Icon = styled.div`
   }
 
   &:hover {
-    color: #F231A5
+    color: #f15b29
    }
 `;
 

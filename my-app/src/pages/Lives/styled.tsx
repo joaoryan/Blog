@@ -20,7 +20,7 @@ export const Title = styled.div`
 
 export const Text = styled.div`
   font-size: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
   a{
     color: #F231A5
   }

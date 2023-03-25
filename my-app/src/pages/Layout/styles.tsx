@@ -20,8 +20,11 @@ export const Container = styled.div`
 	display: flex;
 	height: 100vh;
 	width: 100vw;
-  background: #030518;
+  background: #0e0e0e;
   color: #8899a6;
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: 0.069rem;
 `;
 
 export const SideMenu = styled.div`
@@ -31,7 +34,7 @@ export const SideMenu = styled.div`
 	// position: absolute;
 	top: 0px;
 	z-index: 1;
-	background: #0a0c21;
+  background-image: linear-gradient(to right, #090b0e, #1c1e21);
 	box-shadow: ${props => props.theme.colors.navbarShadow};
 	border-radius: 0px 35px 35px 0px;
 	display: flex;
