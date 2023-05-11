@@ -4,7 +4,7 @@ import axios from '../../services/axios';
 
 
 
-import tdd from '../../assets/image/testTDD.png'
+import tdd from '../../assets/image/testTDD.jpg'
 import * as Styled from './styled';
 import { Container } from '../../styles/GlobalStyles';
 import { NavLink } from 'react-router-dom';
@@ -12,7 +12,7 @@ import { BiSearchAlt } from "react-icons/bi";
 import { Section } from '../Layout/styles';
 
 
-export function Home(): JSX.Element {
+export function Artigos(): JSX.Element {
   const [filteredMenu, setfilteredMenu] = useState<string>('');
 
   return (

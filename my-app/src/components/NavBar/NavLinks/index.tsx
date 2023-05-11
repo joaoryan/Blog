@@ -1,14 +1,5 @@
-import React, { FC, useState } from 'react';
-import { Link } from 'react-router-dom';
-
-import { LinksList, ListItem, Icon } from './style';
-
-import HomeIcon from '../../../assets/image/home.svg';
-import CookbookIcon from '../../../assets/image/cookbook.svg';
-import MenuIcon from '../../../assets/image/meus-menus.svg';
-import EquipamentIcon from '../../../assets/image/equipamentos.svg';
-import UserIcon from '../../../assets/image/usuarios.svg';
-import AttendanceIcon from '../../../assets/image/atendimento.svg';
+import React, { FC } from 'react';
+import { LinksList, ListItem } from './style';
 import { NavLink } from 'react-router-dom';
 
 type LinksProps = {
@@ -17,33 +8,23 @@ type LinksProps = {
 
 const Links: FC<LinksProps> = (props) => {
 
-	const checkActive = (match: any, location: any) => {
-		//some additional logic to verify you are in the home URI
-		if (!location) return false;
-		const { pathname } = location;
-		return (pathname === "/home")
-	}
+  const checkActive = (match: any, location: any) => {
+    //some additional logic to verify you are in the home URI
+    if (!location) return false;
+    const { pathname } = location;
+    return (pathname === "/artigos")
+  }
 
   return (
     <LinksList>
       <ListItem>
-        <NavLink to='/home'>
-          {!props.hidden && 'Home'}
+        <NavLink to='/artigos'>
+          {!props.hidden && 'Artigos'}
         </NavLink>
       </ListItem>
       <ListItem>
         <NavLink to='/profile' >
           {!props.hidden && 'Sobre Mim'}
-        </NavLink>
-      </ListItem>
-      <ListItem>
-        <NavLink to='/lives'>
-          {!props.hidden && 'Lives'}
-        </NavLink>
-      </ListItem>
-      <ListItem>
-        <NavLink to='/project' >
-          {!props.hidden && 'Projetos'}
         </NavLink>
       </ListItem>
     </LinksList>

@@ -16,23 +16,20 @@ const NavBar = () => {
       <Text>{"Aqui devo escrever uma breve introdução"}</Text>
       <DivIcon>
         <Icon>
-            <AiFillGithub/>
+          <AiFillGithub />
         </Icon>
         <Icon>
-          <AiFillInstagram/>
+          <AiFillInstagram />
         </Icon>
         <Icon>
-          <AiFillLinkedin/>
+          <AiFillLinkedin />
         </Icon>
         <Icon>
-          <AiFillTwitterCircle/>
+          <AiFillTwitterCircle />
         </Icon>
       </DivIcon>
       <NavLinks hidden={backOffNav} />
-      <ButtonHidden onClick={slideHandler} className='button-hidden'>
-        <LeftArrow className={`${backOffNav ? 'right' : 'left'}`} />
-      </ButtonHidden>
-    </Nav> 
+    </Nav>
   );
 };
 

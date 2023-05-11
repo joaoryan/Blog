@@ -5,7 +5,7 @@ export const Page = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 102px;
+  padding: 40px 102px;
 `;
 
 export const Container = styled.div`
@@ -44,12 +44,13 @@ export const DivIcon = styled.div`
 
 export const Icon = styled.div`
   cursor: pointer;
-
+  a{
+    color: #8899a6;
+    &:hover {
+    color: #f15b29
+    }
+  }
   svg{
     font-size: 30px;
-  }
-
-  &:hover {
-    color: #f15b29
   }
 `;

@@ -9,12 +9,12 @@ export const Nav = styled.nav`
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  border-radius: 0px 35px 35px 0px;
+  //border-radius: 0px 35px 35px 0px;
   transition: all 0.5s ease-in-out;
   padding: 23px 0;
   gap: 60px;
   &:hover {
-    box-shadow: inset -40px 0px 30px -20px rgba(255,255,255,0.2);
+    box-shadow: inset -26px 0px 30px -20px rgba(255,255,255,0.2);
     & .button-hidden {
     opacity: 1;
     }

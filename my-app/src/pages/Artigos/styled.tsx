@@ -45,13 +45,15 @@ export const Input = styled.input`
 export const Image = styled.img`
   height: 270px;
   width: 220px;
- border-radius: 3px;
+  border-radius: 3px;
   transition: 0.5s;
   margin: 20px 10px;
-  clip-path: polygon(18% 0, 80% 0%, 100% 0, 100% 88%, 83% 100%, 20% 100%, 0 100%, 0 11%);
-
+  clip-path: polygon(30% 0%, 79% 0, 100% 18%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
+ 
   :hover{
-    border-top-left-radius: 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+    height: 274px;
+    width: 224px;
     transition: 0.5s;
   }
 `;
