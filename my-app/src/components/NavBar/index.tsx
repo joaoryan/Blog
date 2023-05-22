@@ -13,20 +13,24 @@ const NavBar = () => {
   return (
     <Nav className={`${backOffNav ? 'back-off' : ''}`}>
       <Title>{"João Ryan"}</Title>
-      <Text>{"Aqui devo escrever uma breve introdução"}</Text>
+      <Text>{"Graduando engenharia de software, desenvolvedor fullstack"}</Text>
       <DivIcon>
         <Icon>
-          <AiFillGithub />
+          <a href="https://github.com/joaoryan" target="_blank"><AiFillGithub /></a>
         </Icon>
+        {/*
         <Icon>
           <AiFillInstagram />
         </Icon>
+        */}
         <Icon>
-          <AiFillLinkedin />
+          <a href="https://www.linkedin.com/in/joão-ryan-santos-a196a7207/" target="_blank"><AiFillLinkedin /></a>
         </Icon>
+        {/*
         <Icon>
           <AiFillTwitterCircle />
         </Icon>
+        */}
       </DivIcon>
       <NavLinks hidden={backOffNav} />
     </Nav>

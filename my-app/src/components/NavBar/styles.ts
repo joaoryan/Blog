@@ -80,7 +80,12 @@ export const DivIcon = styled.div`
 
 export const Icon = styled.div`
   cursor: pointer;
-
+  a{
+    color: #8899a6;
+    &:hover {
+    color: #f15b29
+    }
+  }
   svg{
    font-size: 30px;
   }

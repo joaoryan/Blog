@@ -15,17 +15,19 @@ export function Profile(): JSX.Element {
       <Styled.Container>
         <Styled.Title>Sobre mim</Styled.Title>
         <Styled.Text>
-          Meu nome é João Ryan dos Santos, nasci em Santa Rita do Sapucaí/MG e sou um desenvolvedor
+          Meu nome é João Ryan dos Santos, nasci em Santa Rita do Sapucaí/MG e sou um desenvolvedor.
         </Styled.Text>
         <Styled.Text>
-          Sou graduando de engenharia de software no <a href="http://www.toptal.com/" target="_blank" rel="noopener noreferrer"> Instituto Nacional de Telecomunicações - Inatel</a>,
-          Atualmente trabalho na empresa <a href="http://www.toptal.com/" target="_blank" rel="noopener noreferrer">pratica klimaquip</a>. já tive outro trabalho antes na area agricola...
-          E por que eu trabalho com progamação agora? Ah… porque progamaçoão é incrível, a facilidade em aprender
-          cada dia mais e ainda poder ajudar um grande número de pessoas me deixa feliz e realizado todos os dias.
+          Sou graduando de engenharia de software no <a href="https://inatel.br/home/" target="_blank" rel="noopener noreferrer"> Instituto Nacional de Telecomunicações - Inatel</a>. Atualmente
+          trabalho na empresa <a href="https://www.praticabr.com" target="_blank" rel="noopener noreferrer">pratica klimaquip</a>. Já tive outro trabalho antes na área agrícola.
         </Styled.Text>
         <Styled.Text>
-          Eu amo trabalhar em equipe e sou bem comunicativo. No meu tempo livre,
-          gosto de ensinar meus amigos sobre alguma coisa que aprendi, acho que por isso nasceu esse blog.
+          E por que eu trabalho com programação agora? Ah, porque programação é incrível! A facilidade em aprender cada
+          dia mais e ainda poder ajudar um grande número de pessoas me deixa feliz e realizado todos os dias.
+        </Styled.Text>
+        <Styled.Text>
+          Eu amo trabalhar em equipe e sou bem comunicativo. No meu tempo livre, gosto de ensinar meus amigos sobre alguma
+          coisa que aprendi. Acho que por isso nasceu esse blog.
         </Styled.Text>
         <Styled.SubTitle>Contato</Styled.SubTitle>
         <Styled.Text>
@@ -33,17 +35,22 @@ export function Profile(): JSX.Element {
         </Styled.Text>
         <Styled.DivIcon>
           <Styled.Icon >
-            <a href="http://www.toptal.com/"><AiFillGithub /></a>
+            <a href="https://github.com/joaoryan" target="_blank"><AiFillGithub /></a>
           </Styled.Icon>
+          {/*
           <Styled.Icon>
-            <a href="http://www.toptal.com/"><AiFillInstagram /></a>
+            <a href="http://www.toptal.com/" target="_blank"><AiFillInstagram /></a>
           </Styled.Icon>
+          */}
           <Styled.Icon>
-            <a href="http://www.toptal.com/"><AiFillLinkedin /></a>
+            <a href="https://www.linkedin.com/in/joão-ryan-santos-a196a7207/" target="_blank"><AiFillLinkedin /></a>
           </Styled.Icon>
+          {/*
           <Styled.Icon>
-            <a href="http://www.toptal.com/"><AiFillTwitterCircle /></a>
+            <a href="http://www.toptal.com/" target="_blank"><AiFillTwitterCircle /></a>
           </Styled.Icon>
+          */}
+
         </Styled.DivIcon>
       </Styled.Container>
     </Styled.Page>

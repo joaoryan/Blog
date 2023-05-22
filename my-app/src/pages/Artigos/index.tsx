@@ -17,6 +17,7 @@ export function Artigos(): JSX.Element {
 
   return (
     <Styled.Page>
+      {/*
       <Styled.SearchInputDiv>
         <Styled.IconSearch>
           <BiSearchAlt />
@@ -24,6 +25,8 @@ export function Artigos(): JSX.Element {
         <Styled.Input name='busca' placeholder={'Buscar'}
           onChange={(e) => setfilteredMenu(e.target.value)} />
       </Styled.SearchInputDiv>
+      */}
+
       <Styled.Cards>
         <NavLink to='/testTDD' >
           <Styled.Image

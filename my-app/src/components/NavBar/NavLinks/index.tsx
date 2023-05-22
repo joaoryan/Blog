@@ -12,13 +12,13 @@ const Links: FC<LinksProps> = (props) => {
     //some additional logic to verify you are in the home URI
     if (!location) return false;
     const { pathname } = location;
-    return (pathname === "/artigos")
+    return (pathname === "/")
   }
 
   return (
     <LinksList>
       <ListItem>
-        <NavLink to='/artigos'>
+        <NavLink to='/'>
           {!props.hidden && 'Artigos'}
         </NavLink>
       </ListItem>

@@ -6,14 +6,14 @@ import { Live } from '../pages/Lives';
 import { Artigos } from '../pages/Artigos';
 import { Page404 } from '../pages/Page404';
 import Layout from '../pages/Layout';
-import { TestTDD } from '../pages/Cards/TestTDD';
+import { TestTDD } from '../pages/Cards/DistLinux';
 
 const AppRoutes = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Layout />}>
-					<Route path='artigos' element={<Artigos />} />
+					<Route path='/' element={<Artigos />} />
 					<Route path='profile' element={<Profile />} />
 					<Route path='lives' element={<Live />} />
 					<Route path='project' element={<Project />} />

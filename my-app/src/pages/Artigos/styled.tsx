@@ -43,8 +43,8 @@ export const Input = styled.input`
 `;
 
 export const Image = styled.img`
-  height: 270px;
-  width: 220px;
+  height: 250px;
+  width: 200px;
   border-radius: 3px;
   transition: 0.5s;
   margin: 20px 10px;
@@ -52,8 +52,8 @@ export const Image = styled.img`
  
   :hover{
     clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
-    height: 274px;
-    width: 224px;
+    height: 254px;
+    width: 204px;
     transition: 0.5s;
   }
 `;
@@ -68,7 +68,7 @@ export const Cards = styled.div`
   & a{
     display: flex;
     justify-content: center;
-    height: 270px;
-    width: 220px;
+    height: 250px;
+    width: 200px;
   }
 `;
