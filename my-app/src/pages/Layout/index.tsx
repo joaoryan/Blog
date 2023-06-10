@@ -4,13 +4,13 @@ import { Section, Container, SideMenu } from './styles'
 import NavBar from '../../components/NavBar'
 
 const Layout = () => {
-  return(
+  return (
     <>
       <Container>
         <SideMenu>
-          <NavBar/>
-        </SideMenu>			
-        <Section>		
+          <NavBar />
+        </SideMenu>
+        <Section>
           <Outlet />
         </Section>
       </Container>
@@ -18,5 +18,4 @@ const Layout = () => {
   )
 }
 
-export default Layout; 
-  
+export default Layout;

@@ -13,23 +13,40 @@ export const Container = styled.div`
   overflow: auto;
 `;
 
+export const BackPage = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  :hover{
+    transition: 0.5s;
+    color: #f0a63b; // #f3b755; //#F27100
+  }
+`;
 
 export const Title = styled.div`
   font-size: 30px;
   margin: 0px 0px 30px 0px;
+  color: #f0a63b; // #f3b755; //#F27100
 `;
 
 export const SubTitle = styled.div`
   font-size: 28px;
   margin: 30px 0px;
+  transition: 0.5s;
+  :hover{
+    transition: 0.5s;
+    color: #f0a63b; // #f3b755; //#F27100
+  }
 `;
 
 export const Text = styled.div`
   font-size: 20px;
   margin: 20PX 0px;
   a{
-    border-bottom: 1px dashed #b4421c;
-    color: #b4421c;
+    border-bottom: 1px dashed #f0a63b; // #f3b755; //#F27100
+    color: #f0a63b; // #f3b755; //#F27100
     text-decoration: none;
   }
 `;
@@ -47,7 +64,7 @@ export const Icon = styled.div`
   a{
     color: #8899a6;
     &:hover {
-    color: #f15b29
+    color: #f0a63b; // #f3b755; //#F27100
     }
   }
   svg{

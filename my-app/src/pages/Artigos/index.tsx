@@ -7,33 +7,31 @@ import axios from '../../services/axios';
 import tdd from '../../assets/image/testTDD.jpg'
 import * as Styled from './styled';
 import { Container } from '../../styles/GlobalStyles';
-import { NavLink } from 'react-router-dom';
-import { BiSearchAlt } from "react-icons/bi";
+import { NavLink, useNavigate } from 'react-router-dom';
+import { FaLinux } from "react-icons/fa";
 import { Section } from '../Layout/styles';
 
 
 export function Artigos(): JSX.Element {
   const [filteredMenu, setfilteredMenu] = useState<string>('');
+  const navigate = useNavigate();
 
   return (
     <Styled.Page>
-      {/*
-      <Styled.SearchInputDiv>
-        <Styled.IconSearch>
-          <BiSearchAlt />
-        </Styled.IconSearch>
-        <Styled.Input name='busca' placeholder={'Buscar'}
-          onChange={(e) => setfilteredMenu(e.target.value)} />
-      </Styled.SearchInputDiv>
-      */}
-
       <Styled.Cards>
-        <NavLink to='/testTDD' >
-          <Styled.Image
-            src={tdd}
-            alt='Logo Prática'
-          />
-        </NavLink>
+        <Styled.Card onClick={() => navigate(`/testTDD`)}>
+          <div>
+            <Styled.Text>
+              Distribuições
+            </Styled.Text>
+            <Styled.TextColor>
+              Linux
+            </Styled.TextColor>
+          </div>
+          <div>
+            <FaLinux />
+          </div>
+        </Styled.Card>
       </Styled.Cards>
     </Styled.Page>
   );

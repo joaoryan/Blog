@@ -4,13 +4,19 @@ import React, { useEffect, useState } from 'react';
 
 import tdd from '../../../assets/image/testTDD.png'
 import * as Styled from '../styled';
+import { MdArrowBackIos } from "react-icons/md";
 import { Container } from '../../../styles/GlobalStyles';
+import { useNavigate } from 'react-router-dom';
 
 export function TestTDD(): JSX.Element {
-
+  const navigate = useNavigate();
   return (
     <Styled.Page>
       <Styled.Container>
+        <Styled.BackPage onClick={() => navigate('/')}>
+          <MdArrowBackIos />
+          <text>voltar</text>
+        </Styled.BackPage>
         <Styled.Title>Comparativo entre distribuições Linux populares</Styled.Title>
         <Styled.Text>
           Este artigo tem como objetivo comparar oito das mais populares distribuições Linux

@@ -11,11 +11,11 @@ export const LinksList = styled.ul`
 
 export const ListItem = styled.li`
    &:hover {
-    color: #F231A5
+    color: #f3b755; //#F231A5
    }
   & > a {
     border: 1px solid transparent;
-   color: #8899a6;
+    color: #8899a6;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -30,11 +30,11 @@ export const ListItem = styled.li`
   }
 
   .active {
-    color: #F27100
+   color: #f0a63b // #f3b755; //#F27100
   }
 
   .active:hover {
-    color: #F27100
+    color: #f3b755; //#F27100
   }
 
 `;

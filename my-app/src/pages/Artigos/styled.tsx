@@ -3,7 +3,7 @@ import * as color from '../../styles/color';
 
 //geral
 export const Page = styled.div`
-  height: 100%;
+  height: 77vh;
   //width: 100vw;
   padding: 102px;
 `;
@@ -36,39 +36,62 @@ export const Input = styled.input`
   width: 100%;   
   outline: none;
   font-weight: bold;
-  
   :hover {
     font-style: italic;
   }
 `;
 
-export const Image = styled.img`
-  height: 250px;
-  width: 200px;
+export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+  width: 150px;
   border-radius: 3px;
-  transition: 0.5s;
   margin: 20px 10px;
+  padding: 20px;
   clip-path: polygon(30% 0%, 79% 0, 100% 18%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
- 
+  background-color: #1c1e21;
+  border: none;
+  font-size: 18px;
+  font-weight: 510;
+  transition: 0.5s;
+  cursor: pointer;
+  svg{
+    font-size: 60px;
+  }
   :hover{
-    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
-    height: 254px;
-    width: 204px;
     transition: 0.5s;
+    color: #f0a63b; // #f3b755; //#F27100
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+    height: 204px;
+    width: 154px;
+    transition: 0.5s;
+    font-size: 20px;
   }
 `;
 
 export const Cards = styled.div`
-  display: grid;
-  justify-items: start;
-  grid-template-columns: auto auto auto auto auto;
-  padding: 20px 0px;
-  height: 85%;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px 0px;
+  height: 85vh;
+  overflow-y: none;
   & a{
     display: flex;
     justify-content: center;
     height: 250px;
     width: 200px;
   }
+`;
+
+export const Text = styled.div`
+  color:#8899a6;
+  text-decoration: none;
+`;
+export const TextColor = styled.div`
+  color:#f0a63b; // #f3b755; //#F27100;
+  text-decoration: none;
 `;

@@ -28,8 +28,8 @@ export const Text = styled.div`
   font-size: 20px;
   margin: 20PX 0px;
   a{
-    border-bottom: 1px dashed #b4421c;
-    color: #b4421c;
+    border-bottom: 1px dashed #f0a63b; // #f3b755; //#F27100
+    color: #f0a63b; // #f3b755; //#F27100
     text-decoration: none;
   }
 `;
@@ -46,8 +46,11 @@ export const Icon = styled.div`
   cursor: pointer;
   a{
     color: #8899a6;
-    &:hover {
-    color: #f15b29
+    cursor: pointer;
+    transition: 0.5s;
+    :hover{
+      transition: 0.5s;
+      color: #f0a63b; // #f3b755; //#F27100
     }
   }
   svg{

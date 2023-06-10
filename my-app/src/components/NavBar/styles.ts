@@ -11,10 +11,10 @@ export const Nav = styled.nav`
   overflow: hidden;
   //border-radius: 0px 35px 35px 0px;
   transition: all 0.5s ease-in-out;
-  padding: 23px 0;
   gap: 60px;
+  padding: 10px;
   &:hover {
-    box-shadow: inset -26px 0px 30px -20px rgba(255,255,255,0.2);
+    box-shadow: inset -24px 0px 30px -20px rgba(255,255,255,0.2);
     & .button-hidden {
     opacity: 1;
     }
@@ -82,17 +82,19 @@ export const Icon = styled.div`
   cursor: pointer;
   a{
     color: #8899a6;
+    transition: 0.5s;
     &:hover {
-    color: #f15b29
+      transition: 0.5s;
+      color:  #f0a63b; // #f3b755; //#F27100
     }
   }
   svg{
-   font-size: 30px;
+    font-size: 30px;
   }
 
   &:hover {
-    color: #f15b29
-   }
+    color:  #f0a63b; // #f3b755; //#F27100
+  }
 `;
 
 export const Title = styled.div`

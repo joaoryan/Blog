@@ -32,12 +32,10 @@ export const SideMenu = styled.div`
 	border: none;
 	width: auto;
 	height: 100vh;
-	// position: absolute;
 	top: 0px;
 	z-index: 1;
   background-image: linear-gradient(to right, #090b0e, #1c1e21);
 	box-shadow: ${props => props.theme.colors.navbarShadow};
-//	border-radius: 0px 35px 35px 0px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
