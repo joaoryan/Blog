@@ -6,6 +6,10 @@ export const Page = styled.div`
   justify-content: center;
   align-items: center;
   padding: 40px 102px;
+  margin-bottom: 50px;
+  @media (max-width: 800px) {
+    padding: 10px 26px;
+  }
 `;
 
 export const Container = styled.div`
@@ -17,16 +21,29 @@ export const Container = styled.div`
 export const Title = styled.div`
   font-size: 30px;
   margin: 0px 0px 30px 0px;
+  @media (max-width: 500px) {
+    font-size: 24px;
+    margin: 0px 0px 20px 0px;
+  }
 `;
 
 export const SubTitle = styled.div`
   font-size: 28px;
   margin: 30px 0px;
+  :hover{
+    color: #f0a63b; 
+  }
+  @media (max-width: 500px) {
+    font-size: 24px;
+  }
 `;
 
 export const Text = styled.div`
   font-size: 20px;
   margin: 20PX 0px;
+  @media (max-width: 500px) {
+    font-size: 18px;
+  }
   a{
     border-bottom: 1px dashed #f0a63b; // #f3b755; //#F27100
     color: #f0a63b; // #f3b755; //#F27100
