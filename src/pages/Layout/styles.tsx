@@ -26,6 +26,9 @@ export const Container = styled.div`
   font-weight: 300;
   line-height: 1.7;
   letter-spacing: 0.069rem;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const SideMenu = styled.div`
@@ -40,6 +43,11 @@ export const SideMenu = styled.div`
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
+  padding: 0px 20px;
+
+  @media (max-width: 800px) {
+    height: auto;
+  }
 `;
 
 export const Main = styled.main`

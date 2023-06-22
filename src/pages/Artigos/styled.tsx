@@ -3,9 +3,10 @@ import * as color from '../../styles/color';
 
 //geral
 export const Page = styled.div`
-  height: 77vh;
-  //width: 100vw;
   padding: 102px;
+  @media (max-width: 800px) {
+    padding: 22px;
+  }
 `;
 
 export const SearchInputDiv = styled.div`
@@ -57,6 +58,7 @@ export const Card = styled.div`
   font-weight: 510;
   transition: 0.5s;
   cursor: pointer;
+
   svg{
     font-size: 60px;
   }
@@ -69,6 +71,21 @@ export const Card = styled.div`
     transition: 0.5s;
     font-size: 20px;
   }
+
+  @media (max-width: 800px) {
+    height: 150px;
+    width: 100px;
+    font-size: 14px;
+    svg{
+      font-size: 40px;
+    }
+    :hover{
+      font-size: 16px;
+      height: 154px;
+      width: 104px;
+      transition: 0.5s;
+    }
+  }
 `;
 
 export const Cards = styled.div`
@@ -77,8 +94,8 @@ export const Cards = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
   padding: 10px 0px;
-  height: 85vh;
   overflow-y: none;
+
   & a{
     display: flex;
     justify-content: center;
