@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Nav = styled.nav`
   position: relative;
   height: 100vh;
-  width: 300px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -12,7 +11,7 @@ export const Nav = styled.nav`
   //border-radius: 0px 35px 35px 0px;
   transition: all 0.5s ease-in-out;
   gap: 60px;
-  padding: 10px;
+  padding: 20px;
   &:hover {
     box-shadow: inset -24px 0px 30px -20px rgba(255,255,255,0.2);
     & .button-hidden {
@@ -22,7 +21,13 @@ export const Nav = styled.nav`
   &.back-off {
     width: 100px;
   }
+`;
 
+export const Img = styled.div`
+  img{
+    width: 150px;
+    border-radius: 50%;
+  }
 `;
 
 export const ButtonHidden = styled.div`

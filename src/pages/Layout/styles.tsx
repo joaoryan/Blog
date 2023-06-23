@@ -6,6 +6,7 @@ export const Section = styled.div`
 	text-transform: none;
 	width: 100%;
   overflow-y: auto;
+  background: #0e0e0e;
 `;
 
 export const Header = styled.div`
@@ -21,7 +22,7 @@ export const Container = styled.div`
 	display: flex;
 	height: 100vh;
 	width: 100vw;
-  background: #0e0e0e;
+  
   color: #8899a6;
   font-weight: 300;
   line-height: 1.7;
@@ -32,19 +33,14 @@ export const Container = styled.div`
 `;
 
 export const SideMenu = styled.div`
-	border: none;
 	width: auto;
 	height: 100vh;
-	top: 0px;
-	z-index: 1;
-  background-image: linear-gradient(to right, #090b0e, #1c1e21);
+  background: linear-gradient(to right, #0e0e0e, #1c1e21);
 	box-shadow: ${props => props.theme.colors.navbarShadow};
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
-  padding: 0px 20px;
-
   @media (max-width: 800px) {
     height: auto;
   }

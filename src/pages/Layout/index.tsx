@@ -5,22 +5,19 @@ import NavBar from '../../components/NavBar'
 import { Header } from '../../components/Header'
 
 const Layout = () => {
-  console.log(window.innerWidth)
   return (
-    <>
-      <Container>
-        <SideMenu>
-          {window.innerWidth >= 800 ?
-            <NavBar />
-            :
-            <Header />
-          }
-        </SideMenu>
-        <Section>
-          <Outlet />
-        </Section>
-      </Container>
-    </>
+    <Container>
+      <SideMenu>
+        {window.innerWidth >= 800 ?
+          <NavBar />
+          :
+          <Header />
+        }
+      </SideMenu>
+      <Section>
+        <Outlet />
+      </Section>
+    </Container>
   )
 }
 

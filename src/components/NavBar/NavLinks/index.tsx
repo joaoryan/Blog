@@ -19,12 +19,12 @@ const Links: FC<LinksProps> = (props) => {
     <LinksList>
       <ListItem>
         <NavLink to='/'>
-          {!props.hidden && 'Artigos'}
+          {'Artigos'}
         </NavLink>
       </ListItem>
       <ListItem>
         <NavLink to='/profile' >
-          {!props.hidden && 'Sobre Mim'}
+          {'Sobre Mim'}
         </NavLink>
       </ListItem>
     </LinksList>
