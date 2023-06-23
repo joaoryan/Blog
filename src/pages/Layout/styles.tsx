@@ -5,6 +5,7 @@ const width = '660px'
 export const Section = styled.div`
 	text-transform: none;
 	width: 100%;
+  height: 100vh;
   overflow-y: auto;
   background: #0e0e0e;
 `;
@@ -22,7 +23,6 @@ export const Container = styled.div`
 	display: flex;
 	height: 100vh;
 	width: 100vw;
-  
   color: #8899a6;
   font-weight: 300;
   line-height: 1.7;

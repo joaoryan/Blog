@@ -23,7 +23,7 @@ body{
 }
 
 html, border, #root{
-    //height: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -31,7 +31,7 @@ html, border, #root{
 
 button{
     cursor: pointer;
-    //background: ${color.primaryBlueColor};
+   background: ${color.primaryBlueColor};
     border: none;
     color: #fff;
     padding:10px 20px ;
@@ -56,11 +56,11 @@ background: ${color.errorColor}
 `;
 
 export const Container = styled.section`
- // max-width: 100%;
- // width: 89%;
- // height: 100%;
+  max-width: 100%;
+  width: 89%;
+  height: 100%;
   float: right;
- // padding: 32px 114px;
+  padding: 32px 114px;
   overflow: scroll;
   margin: 0;
     padding: 0;

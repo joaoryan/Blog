@@ -6,18 +6,20 @@ import { Header } from '../../components/Header'
 
 const Layout = () => {
   return (
-    <Container>
-      <SideMenu>
-        {window.innerWidth >= 800 ?
-          <NavBar />
-          :
-          <Header />
-        }
-      </SideMenu>
-      <Section>
-        <Outlet />
-      </Section>
-    </Container>
+    <>
+      <Container>
+        <SideMenu>
+          {window.innerWidth >= 800 ?
+            <NavBar />
+            :
+            <Header />
+          }
+        </SideMenu>
+        <Section>
+          <Outlet />
+        </Section>
+      </Container>
+    </>
   )
 }
 
