@@ -3,13 +3,12 @@ import styled from 'styled-components';
 import img from '../../assets/image/AgroControl.png';
 
 interface ImageProps {
-    position: string;
-    zoom: boolean; // Nova prop para controlar o zoom
+  position: string;
+  zoom: boolean;
 }
 
 const CardWrapper = styled.div`
   width: 400px;
-  //border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -39,14 +38,6 @@ const Content = styled.div`
   padding: 16px;
 `;
 
-const Category = styled.span`
-  color: #ffa726;
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  display: inline-block;
-`;
-
 const Title = styled.h2`
   font-size: 20px;
   margin: 0px;
@@ -59,12 +50,6 @@ const Description = styled.p`
   line-height: 1.5;
 `;
 
-const TimeInfo = styled.span`
-  font-size: 12px;
-  color: #999;
-  display: block;
-  margin-bottom: 8px;
-`;
 const ProjectCard = () => {
     const [position, setPosition] = useState('center center');
     const [zoom, setZoom] = useState<boolean>(false);
@@ -92,10 +77,7 @@ const ProjectCard = () => {
           zoom={zoom} 
         />
       </ImageWrapper>
-
       <Content>
-      {/*   <Category>web</Category>
-        <TimeInfo>há 6 dias</TimeInfo> */}
         <Title>AgroControl</Title>
         <Description>
           Uma aplicação para controle financeiro permite o gerenciamento eficiente de receitas, despesas e investimentos em propriedades rurais...

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const LinksList = styled.ul`
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   width: 100%;
   display: flex;
   flex-direction: column;
