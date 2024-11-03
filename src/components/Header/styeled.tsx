@@ -9,6 +9,9 @@ export const Content = styled.div`
   height: 50px;
   margin: 0px 40px;
   gap: 30px;
+   @media (min-width: 800px) {
+    display: none;
+  }
 `;
 
 export const Title = styled.div`

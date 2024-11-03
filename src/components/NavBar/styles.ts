@@ -21,6 +21,10 @@ export const Nav = styled.nav`
   &.back-off {
     width: 100px;
   }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const Img = styled.div`
