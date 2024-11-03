@@ -8,23 +8,9 @@ export const Page = styled.div`
   }
 `;
 
-export const Card = styled.img`
-  height: 300px;
-  width: 100;
-  background-color: #fff;
-`;
-
 export const Title = styled.div`
   font-size: 30px;
   margin-bottom: 20px;
-`;
-
-export const Text = styled.div`
-  font-size: 20px;
-  margin-bottom: 20px;
-  a{
-    color: #F231A5
-  }
 `;
 
 export const Content = styled.div`
