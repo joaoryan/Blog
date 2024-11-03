@@ -5,10 +5,13 @@ export const Content = styled.div`
   display: flex;
   align-items: center;  
   justify-content: flex-end;
-  width: 100%;
+  width: 100vw;
+  width: 100dvw;
   height: 50px;
-  margin: 0px 40px;
   gap: 30px;
+   @media (min-width: 800px) {
+    display: none;
+  }
 `;
 
 export const Title = styled.div`

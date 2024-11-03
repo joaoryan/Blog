@@ -3,10 +3,12 @@ import * as color from '../../styles/color';
 
 export const Page = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 40px 102px;
-  margin-bottom: 50px;
+  justify-content: center;
+  height: 100vh;
+  height: 100dvh;
+  padding: 0px 102px;
   @media (max-width: 800px) {
     padding: 10px 26px;
   }
@@ -15,6 +17,7 @@ export const Page = styled.div`
 export const Container = styled.div`
   max-width: 930px;
   overflow: auto;
+  text-align: justify;
 `;
 
 

@@ -1,33 +1,31 @@
 import React, { FC } from 'react';
-import { LinksList, ListItem } from './style';
 import { NavLink } from 'react-router-dom';
+
+import * as Styled from './styled';
 
 type LinksProps = {
   hidden: boolean;
 };
 
-const Links: FC<LinksProps> = (props) => {
-
-  const checkActive = (match: any, location: any) => {
-    //some additional logic to verify you are in the home URI
-    if (!location) return false;
-    const { pathname } = location;
-    return (pathname === "/")
-  }
-
+const Links: FC<LinksProps> = () => {
   return (
-    <LinksList>
-      <ListItem>
+    <Styled.LinksList>
+      <Styled.ListItem>
         <NavLink to='/'>
           {'Artigos'}
         </NavLink>
-      </ListItem>
-      <ListItem>
+      </Styled.ListItem>
+      <Styled.ListItem>
+        <NavLink to='/projectList'>
+          {'Projetos'}
+        </NavLink>
+      </Styled.ListItem>
+      <Styled.ListItem>
         <NavLink to='/profile' >
           {'Sobre Mim'}
         </NavLink>
-      </ListItem>
-    </LinksList>
+      </Styled.ListItem>
+    </Styled.LinksList>
   );
 };
 

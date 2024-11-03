@@ -21,8 +21,8 @@ export const Header = styled.div`
 
 export const Container = styled.div`
 	display: flex;
-	height: 100vh;
-	width: 100vw;
+	height: 100dvh;
+	width: 100dvw;
   color: #8899a6;
   font-weight: 300;
   line-height: 1.7;
@@ -34,7 +34,7 @@ export const Container = styled.div`
 
 export const SideMenu = styled.div`
 	width: auto;
-	height: 100vh;
+	height: 100dvh;
   background: linear-gradient(to right, #0e0e0e, #1c1e21);
 	box-shadow: ${props => props.theme.colors.navbarShadow};
 	display: flex;

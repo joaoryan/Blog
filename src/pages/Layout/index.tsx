@@ -9,11 +9,8 @@ const Layout = () => {
     <>
       <Container>
         <SideMenu>
-          {window.innerWidth >= 800 ?
             <NavBar />
-            :
             <Header />
-          }
         </SideMenu>
         <Section>
           <Outlet />

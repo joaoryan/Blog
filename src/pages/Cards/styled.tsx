@@ -91,3 +91,24 @@ export const Icon = styled.div`
     font-size: 30px;
   }
 `;
+
+export const List = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 60px;
+`;
+
+export const ListItem = styled.div`
+  font-size: 20px;
+  margin: 20PX 0px;
+  @media (max-width: 500px) {
+    font-size: 18px;
+  }
+  a{
+    border-bottom: 1px dashed #f0a63b; // #f3b755; //#F27100
+    color: #f0a63b; // #f3b755; //#F27100
+    text-decoration: none;
+  }
+`;
