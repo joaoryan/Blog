@@ -5,13 +5,10 @@ import { Container } from '../../styles/GlobalStyles';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { FaLinux } from "react-icons/fa";
 
-export function Artigos(): JSX.Element {
-  const [filteredMenu, setfilteredMenu] = useState<string>('');
+export function ArticleCard(): JSX.Element {
   const navigate = useNavigate();
 
   return (
-    <Styled.Page>
-      <Styled.Cards>
         <Styled.Card onClick={() => navigate(`/distroLinux`)}>
           <div>
             <Styled.Text>
@@ -25,7 +22,5 @@ export function Artigos(): JSX.Element {
             <FaLinux />
           </div>
         </Styled.Card>
-      </Styled.Cards>
-    </Styled.Page>
   );
 }

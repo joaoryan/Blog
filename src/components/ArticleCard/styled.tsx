@@ -2,12 +2,6 @@ import styled from 'styled-components';
 import * as color from '../../styles/color';
 
 //geral
-export const Page = styled.div`
-  padding: 102px;
-  @media (max-width: 800px) {
-    padding: 22px;
-  }
-`;
 
 export const SearchInputDiv = styled.div`
   width: 500px;

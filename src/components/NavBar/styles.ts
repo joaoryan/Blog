@@ -9,11 +9,11 @@ export const Nav = styled.nav`
   align-items: center;
   overflow: hidden;
   //border-radius: 0px 35px 35px 0px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
   gap: 60px;
   padding: 20px;
   &:hover {
-    box-shadow: inset -24px 0px 30px -20px rgba(255,255,255,0.2);
+    box-shadow: inset -24px 0px 20px -20px rgba(255,255,255,0.2);
     & .button-hidden {
     opacity: 1;
     }
@@ -25,7 +25,7 @@ export const Nav = styled.nav`
 
 export const Img = styled.div`
   img{
-    width: 150px;
+    width: 130px;
     border-radius: 50%;
   }
 `;
