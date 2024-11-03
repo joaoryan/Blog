@@ -6,12 +6,16 @@ import * as Styled from './styeled';
 export function Header(): JSX.Element {
   return (
     <Styled.Content>
-      <Styled.page>
+        <Styled.page>
         <NavLink to="/">
           Artigos
         </NavLink>
       </Styled.page>
-
+      <Styled.page>
+        <NavLink to="/projectList">
+          Projetos
+        </NavLink>
+      </Styled.page>
       <Styled.page>
         <NavLink to="/profile">
           Sobre Mim
