@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
-//import { Link } from 'react-router-dom';
-
-import tdd from '../../../assets/image/testTDD.png'
 import * as Styled from '../styled';
+
 import { MdArrowBackIos } from "react-icons/md";
-import { Container } from '../../../styles/GlobalStyles';
 import { useNavigate } from 'react-router-dom';
 
-export function TestTDD(): JSX.Element {
+export function DistroLinux(): JSX.Element {
   const navigate = useNavigate();
   return (
     <Styled.Page>

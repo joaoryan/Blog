@@ -5,7 +5,7 @@ import { Profile } from '../pages/Profile';
 import { Artigos } from '../pages/Artigos';
 import { Page404 } from '../pages/Page404';
 import Layout from '../pages/Layout';
-import { TestTDD } from '../pages/Cards/DistLinux';
+import { DistroLinux } from '../pages/Cards/DistLinux';
 
 const AppRoutes = () => {
 	return (
@@ -15,7 +15,7 @@ const AppRoutes = () => {
 					<Route path='/' element={<Artigos />} />
 					<Route path='profile' element={<Profile />} />
 					<Route path='project' element={<ProjectList />} />
-					<Route path='testTDD' element={<TestTDD />} />
+					<Route path='distroLinux' element={<DistroLinux />} />
 					<Route path="*" element={<Page404 />} />
 				</Route>
 			</Routes>
