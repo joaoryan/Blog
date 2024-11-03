@@ -23,7 +23,7 @@ const Links: FC<LinksProps> = (props) => {
         </NavLink>
       </ListItem>
       <ListItem>
-        <NavLink to='/project'>
+        <NavLink to='/projectList'>
           {'Projetos'}
         </NavLink>
       </ListItem>

@@ -14,7 +14,7 @@ const AppRoutes = () => {
 				<Route path="/" element={<Layout />}>
 					<Route path='/' element={<Artigos />} />
 					<Route path='profile' element={<Profile />} />
-					<Route path='project' element={<ProjectList />} />
+					<Route path='projectList' element={<ProjectList />} />
 					<Route path='distroLinux' element={<DistroLinux />} />
 					<Route path="*" element={<Page404 />} />
 				</Route>
