@@ -6,6 +6,7 @@ export const Page = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+ // overflow: auto;
   height: 100vh;
   height: 100dvh;
   padding: 0px 102px;
@@ -16,7 +17,9 @@ export const Page = styled.div`
 
 export const Container = styled.div`
   max-width: 930px;
-  overflow: auto;
+  height: 100vh;
+  height: 100dvh;
+  //overflow: hidden;
   text-align: justify;
 `;
 

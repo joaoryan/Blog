@@ -23,6 +23,8 @@ export const Container = styled.div`
 	display: flex;
 	height: 100dvh;
 	width: 100dvw;
+  max-width: 100dvw;
+  max-height: 100dvh;
   color: #8899a6;
   font-weight: 300;
   line-height: 1.7;

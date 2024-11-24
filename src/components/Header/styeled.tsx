@@ -3,12 +3,22 @@ import * as color from '../../styles/color';
 
 export const Content = styled.div`
   display: flex;
+  flex-direction: row;
   align-items: center;  
   justify-content: flex-end;
+  justify-content: space-around;
   width: 100vw;
   width: 100dvw;
   height: 50px;
-  gap: 30px;
+  gap: 20px;
+/*   background-color: rgba(0, 0, 0, 0.2); 
+  backdrop-filter: blur(10px);
+  position: fixed;  */
+  div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
    @media (min-width: 800px) {
     display: none;
   }
@@ -45,6 +55,9 @@ export const page = styled.div`
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
+    @media (max-width: 440px) {
+      font-size: 14px;
+    }
   }
   & > a:hover {
     transition: 0.5s;
@@ -56,4 +69,10 @@ export const page = styled.div`
   .active:hover {
     color: #f3b755; //#F27100
   }
+`;
+
+export const ImageLogo = styled.img`
+  width: 25px;
+  object-fit: cover;
+  opacity:1;
 `;
