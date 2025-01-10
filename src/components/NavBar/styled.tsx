@@ -8,6 +8,7 @@ export const Nav = styled.nav`
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  background-color: ${({ theme }) => theme.colors.background};
   //border-radius: 0px 35px 35px 0px;
   transition: all 0.8s ease-in-out;
   gap: 60px;

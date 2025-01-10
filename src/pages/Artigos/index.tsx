@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from '../../services/axios';
 import * as Styled from './styled';
-import { Container } from '../../styles/GlobalStyles';
+
 import { NavLink, useNavigate } from 'react-router-dom';
 import { FaLinux } from "react-icons/fa";
 

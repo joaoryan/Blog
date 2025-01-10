@@ -7,8 +7,10 @@ import * as Styled from './styled';
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import img from '../../assets/image/joao-ryan.png'
 
+
 const NavBar = () => {
   const [backOffNav, setbackOffNav] = useState(false);
+
 
   return (
     <Styled.Nav>
@@ -25,6 +27,7 @@ const NavBar = () => {
           <a href="https://www.linkedin.com/in/joão-ryan-santos-a196a7207/" target="_blank"><AiFillLinkedin /></a>
         </Styled.Icon>
       </Styled.DivIcon>
+
       <NavLinks hidden={backOffNav} />
     </Styled.Nav>
   );

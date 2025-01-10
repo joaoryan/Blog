@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import * as color from '../../styles/color';
 
 export const Page = styled.div`
   padding: 102px;
