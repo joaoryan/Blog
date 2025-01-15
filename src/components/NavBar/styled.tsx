@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Nav = styled.nav`
   position: relative;
@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  background-color: ${({ theme }) => theme.colors.background};
+  // background-color: ${({ theme }) => theme.colors.background};
   //border-radius: 0px 35px 35px 0px;
   transition: all 0.8s ease-in-out;
   gap: 60px;
@@ -104,6 +104,19 @@ export const Icon = styled.div`
 
   &:hover {
     color:  #f0a63b; // #f3b755; //#F27100
+  }
+`;
+
+
+const glitch = keyframes`
+    2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
   }
 `;
 
