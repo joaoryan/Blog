@@ -4,9 +4,9 @@ export const Nav = styled.nav`
   position: relative;
   height: 100vh;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   overflow: hidden;
   // background-color: ${({ theme }) => theme.colors.background};
   //border-radius: 0px 35px 35px 0px;
@@ -124,4 +124,29 @@ export const Title = styled.div`
   color: #8899a6;
   font-size: 20px;
   text-align: center;
+`;
+
+export const Footer = styled.footer`
+  text-align: center;
+  padding: 1rem 0;
+`;
+
+export const FooterText = styled.p`
+  margin: 0;
+  font-size: 0.6rem;
+`;
+
+export const FooterLinks = styled.div`
+  margin-top: 0.5rem;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
