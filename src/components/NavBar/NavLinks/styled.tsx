@@ -41,7 +41,7 @@ const glitch = keyframes`
 
 export const ListItem = styled.li`
    &:hover {
-    color: #f3b755; //#F231A5
+    color: ${({ theme }) => theme.colors.textHighlighted}; //#F231A5
    }
   & > a {
     border: 1px solid transparent;
@@ -56,17 +56,17 @@ export const ListItem = styled.li`
 
   & > a:hover {
     transition: 0.5s;
-    color: white;
+    color: hsl(0, 0%, 100%);
 
   }
 
 
   .active {
-   color: #f0a63b // #f3b755; //#F27100
+   color: ${({ theme }) => theme.colors.textHighlighted} // #f3b755; //#F27100
   }
 
   .active:hover {
-    color: #f3b755; //#F27100
+    color: ${({ theme }) => theme.colors.textHighlighted}; //#F27100
   }
 
   div{

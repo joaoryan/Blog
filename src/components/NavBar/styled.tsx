@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   gap: 60px;
   padding: 20px;
   &:hover {
-    box-shadow: inset -24px 0px 20px -20px rgba(255,255,255,0.2);
+    box-shadow: inset -24px 0px 20px -20px #ffffff33;
     & .button-hidden {
     opacity: 1;
     }
@@ -29,8 +29,12 @@ export const Nav = styled.nav`
 `;
 
 export const Img = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   img{
-    width: 130px;
+    width: 120px;
     border-radius: 50%;
   }
 `;
@@ -77,7 +81,7 @@ export const Image = styled.img`
 `;
 
 export const Text = styled.div`
-  color: #8899a6;
+  color: ${({ theme }) => theme.colors.text};
   text-align: center;
 `;
 
@@ -91,11 +95,11 @@ export const DivIcon = styled.div`
 export const Icon = styled.div`
   cursor: pointer;
   a{
-    color: #8899a6;
+    color: ${({ theme }) => theme.colors.text};
     transition: 0.5s;
     &:hover {
       transition: 0.5s;
-      color:  #f0a63b; // #f3b755; //#F27100
+      color:  ${({ theme }) => theme.colors.textHighlighted}; // #f3b755; //#F27100
     }
   }
   svg{
@@ -103,7 +107,7 @@ export const Icon = styled.div`
   }
 
   &:hover {
-    color:  #f0a63b; // #f3b755; //#F27100
+    color:  ${({ theme }) => theme.colors.textHighlighted}; // #f3b755; //#F27100
   }
 `;
 
@@ -121,7 +125,7 @@ const glitch = keyframes`
 `;
 
 export const Title = styled.div`
-  color: #8899a6;
+  color: ${({ theme }) => theme.colors.text};
   font-size: 20px;
   text-align: center;
 `;
@@ -140,7 +144,7 @@ export const FooterLinks = styled.div`
   margin-top: 0.5rem;
 
   a {
-    color: #fff;
+    color: ${({ theme }) => theme.colors.textHover};
     text-decoration: none;
     margin: 0 0.5rem;
     font-size: 0.8rem;
@@ -148,5 +152,19 @@ export const FooterLinks = styled.div`
     &:hover {
       text-decoration: underline;
     }
+  }
+`;
+
+export const Mode = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0px 10px;
+  cursor: pointer;
+
+  h1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 `;

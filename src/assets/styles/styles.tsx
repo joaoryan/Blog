@@ -53,7 +53,6 @@ const GlobalStyle = createGlobalStyle`
 
 	body {        
         font-family: 'Roboto', sans-serif;
-        color: ${props => props.theme.colors.textPrimary};
         font-size: 14px;        
         margin: 0;
         min-height: 100%;

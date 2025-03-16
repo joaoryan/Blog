@@ -51,7 +51,7 @@ export const Card = styled.div`
   margin: 20px 10px;
   padding: 20px;
   clip-path: polygon(30% 0%, 79% 0, 100% 18%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
-  background-color: #1c1e21;
+  background-color: ${({ theme }) => theme.colors.dropdownBackground2};
   border: none;
   font-size: 18px;
   font-weight: 510;
@@ -63,7 +63,7 @@ export const Card = styled.div`
   }
   :hover{
     transition: 0.5s;
-    color: #f0a63b; // #f3b755; //#F27100
+    color: ${({ theme }) => theme.colors.textHighlighted}; // #f3b755; //#F27100
     clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
     height: 204px;
     width: 154px;
@@ -104,10 +104,10 @@ export const Cards = styled.div`
 `;
 
 export const Text = styled.div`
-  color:#8899a6;
+  color: ${({ theme }) => theme.colors.text};
   text-decoration: none;
 `;
 export const TextColor = styled.div`
-  color:#f0a63b; // #f3b755; //#F27100;
+  color: ${({ theme }) => theme.colors.textHighlighted}; // #f3b755; //#F27100;
   text-decoration: none;
 `;

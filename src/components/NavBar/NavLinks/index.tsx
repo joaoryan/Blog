@@ -1,12 +1,15 @@
 import React, { FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import * as Styled from './styled';
+import { useTheme } from '../../../theme-context';
 
 type LinksProps = {
   hidden: boolean;
 };
 
 const Links: FC<LinksProps> = () => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <Styled.LinksList>
       <Styled.ListItem>

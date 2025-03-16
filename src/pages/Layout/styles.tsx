@@ -7,7 +7,7 @@ export const Section = styled.div`
 	width: 100%;
   height: 100vh;
   overflow-y: auto;
-  background: #0e0e0e;
+  background: ${props => props.theme.colors.background};//#0e0e0e;
 `;
 
 export const Header = styled.div`
@@ -16,7 +16,7 @@ export const Header = styled.div`
 	left: 0px;
 	height: 65px;
 	width: 100%;
-  background-color: ${props => props.theme.colors.header};
+
 `
 
 export const Container = styled.div`
@@ -25,7 +25,7 @@ export const Container = styled.div`
 	width: 100dvw;
   max-width: 100dvw;
   max-height: 100dvh;
-  color: #8899a6;
+  color: ${props => props.theme.colors.text};
   font-weight: 300;
   line-height: 1.7;
   letter-spacing: 0.069rem;
@@ -37,8 +37,7 @@ export const Container = styled.div`
 export const SideMenu = styled.div`
 	width: auto;
 	height: 100dvh;
-  background: linear-gradient(to right, #0e0e0e, #1c1e21);
-	box-shadow: ${props => props.theme.colors.navbarShadow};
+  background: linear-gradient(to right, ${({ theme }) => theme.colors.dropdownBackground1}, ${({ theme }) => theme.colors.dropdownBackground2});
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;

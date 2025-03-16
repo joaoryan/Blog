@@ -36,7 +36,7 @@ export const SubTitle = styled.div`
   font-size: 28px;
   margin: 30px 0px;
   :hover{
-    color: #f0a63b; 
+    color: ${props => props.theme.colors.textHighlighted}; 
   }
   @media (max-width: 500px) {
     font-size: 24px;
@@ -50,8 +50,8 @@ export const Text = styled.div`
     font-size: 18px;
   }
   a{
-    border-bottom: 1px dashed #f0a63b; // #f3b755; //#F27100
-    color: #f0a63b; // #f3b755; //#F27100
+    border-bottom: 1px dashed ${props => props.theme.colors.textHighlighted}; // #f3b755; //#F27100
+    color: ${props => props.theme.colors.textHighlighted}; // #f3b755; //#F27100
     text-decoration: none;
   }
 `;
@@ -67,12 +67,12 @@ export const DivIcon = styled.div`
 export const Icon = styled.div`
   cursor: pointer;
   a{
-    color: #8899a6;
+    color: ${props => props.theme.colors.text};
     cursor: pointer;
     transition: 0.5s;
     :hover{
       transition: 0.5s;
-      color: #f0a63b; // #f3b755; //#F27100
+      color: ${props => props.theme.colors.textHighlighted}; // #f3b755; //#F27100
     }
   }
   svg{
