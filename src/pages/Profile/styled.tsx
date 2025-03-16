@@ -20,6 +20,9 @@ export const Container = styled.div`
   height: 100dvh;
   //overflow: hidden;
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 
